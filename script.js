@@ -6,17 +6,24 @@ function BMI(weight, height){
 console.log (BMI(70,1.7));
 
 function Status (Bmi) {
-if (BMI < 18.5) {
+if id="b1"(BMI < 18.5) {
 
     return("لديك نقص بالوزن");
-} else if (BMI >= 18.5 && BMI <25){
+    
+    document.getElementById("b1").style.color = "orange";
+
+} else if id="b2"(BMI >= 18.5 && Bmi <25){
     return `وزنك صحي`;
-}
+
+    document.getElementById("b2").style.color = "green";
+
  
 
-} else (BMI >= 25){
+} else if id="b3"(Bmi >= 25){
 
     return`لديك زياده بالوزن`;
+
+    document.getElementById("b3").style.color = "red";
 }
 
 
@@ -34,4 +41,4 @@ let desc = Status(BMI);
 let div = document.getElementById('result');
 
 div.innerTEXT = BMI + " == " + desc
-}s
+}}
