@@ -3,40 +3,38 @@ function BMI(weight, height){
     return result;
   }
   
-  console.log (BMI(70,1.7));
+  console.log (BMI(10,10));
   
-  function Status (Bmi) {
-  if (BMI < 18.5)
+  function Status (bmi) {
+  if (bmi < 18.5){
   
-      return("لديك نقص بالوزن");
+      return"لديك نقص بالوزن";
       
       
   
-  } else if (BMI >= 18.5 && Bmi <25){
-      return `وزنك صحي`;
+  } else if (bmi >= 18.5 && bmi <25){
+      return "وزنك صحي";
       
   
    
-  } else if (Bmi >= 25){
+  } else if (bmi >= 25){
   
-      return`لديك زياده بالوزن`;
+      return"لديك زياده بالوزن";
   
   }
+}
 
+function calculate() {
 
-
-
-function calculate () {
-
-    let weight = document.getElementById(`weight`).value;
-    let hight = document.getElementById(`hight`).value;
+    let weight = document.getElementById("weight").value;
+    let height = document.getElementById("height").value;
     
     
-    let BMI = (weight,hight);
-    let desc = Status(BMI);
+    let bmi =BMI(weight,height);
+    let desc = Status(bmi);
     
-    let div = document.getElementById('result');
+    let div = document.getElementById("result");
     
-    div.innerTEXT = BMI + " == " + desc;
+    div.innerText = bmi + " == " + desc;
     }
   
